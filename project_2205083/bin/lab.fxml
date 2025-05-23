@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+
+      <!-- Centered Login Box -->
+      <AnchorPane layoutX="250.0" layoutY="150.0" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: rgba(255, 255, 255, 0.8); -fx-background-radius: 15;">
+         <ImageView fitHeight="812.0" fitWidth="1215.0" layoutX="-11.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@Screenshot%202024-12-15%20200102.png" />
+            </image>
+         </ImageView>
+
+         <!-- Login Form -->
+         <AnchorPane layoutX="600.0" layoutY="491.0" prefHeight="200.0" prefWidth="500.0">
+   
+            <!-- Username Field -->
+            <TextField fx:id="username" layoutX="303.0" layoutY="80.0" prefHeight="40.0" prefWidth="278.0" promptText="Username" style="-fx-background-color: #f0f0f0; -fx-border-radius: 5;" />
+
+            <!-- Password Field -->
+            <PasswordField fx:id="password" layoutX="302.0" layoutY="140.0" prefHeight="40.0" prefWidth="278.0" promptText="Password" style="-fx-background-color: #f0f0f0; -fx-border-radius: 5;" />
+
+            <!-- Enter Button -->
+            <Button fx:id="enter" layoutX="303.0" layoutY="203.0" mnemonicParsing="false" onAction="#login" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 16px; -fx-border-radius: 5;" text="Enter">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Hyperlink layoutX="430.0" layoutY="21.0" text=" login account">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink layoutX="495.0" layoutY="192.0" onAction="#guest" text="stay logged out">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Hyperlink>
+         </AnchorPane>
+         <ImageView fitHeight="57.0" fitWidth="236.0" layoutX="964.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@Untitled.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="116.0" fitWidth="120.0" layoutX="872.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@17-03-11-60_512.gif" />
+            </image>
+         </ImageView>
+      </AnchorPane>
+   </children>
+</StackPane>

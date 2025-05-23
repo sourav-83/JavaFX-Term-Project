@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="800.0" maxWidth="1200.0" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ByPlayerNameController">
+    <children>
+        <ImageView blendMode="DARKEN" fitHeight="807.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Screenshot%202024-12-15%20200318.png" />
+            </image>
+        </ImageView>
+
+        <Label layoutX="235.0" layoutY="22.0" text="Enter Player Name:">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+        <TextField fx:id="playerNameField" layoutX="408.0" layoutY="17.0" prefWidth="300.0">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+        <Button fx:id="searchButton" layoutX="408.0" layoutY="64.0" mnemonicParsing="false" onAction="#handleSearch" prefHeight="31.0" prefWidth="92.0" text="Search">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+
+        <TableView fx:id="playerTable" layoutX="50.0" layoutY="109.0" opacity="0.75" prefHeight="666.0" prefWidth="1100.0">
+            <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="150.0" style="-fx-alignment: CENTER;" text="Name" />
+                <TableColumn fx:id="countryColumn" prefWidth="150.0" style="-fx-alignment: CENTER;" text="Country" />
+                <TableColumn fx:id="ageColumn" prefWidth="80.0" style="-fx-alignment: CENTER;" text="Age" />
+                <TableColumn fx:id="heightColumn" prefWidth="120.0" style="-fx-alignment: CENTER;" text="Height" />
+                <TableColumn fx:id="clubColumn" prefWidth="150.0" style="-fx-alignment: CENTER;" text="Club" />
+                <TableColumn fx:id="positionColumn" prefWidth="140.0" style="-fx-alignment: CENTER;" text="Position" />
+                <TableColumn fx:id="numberColumn" prefWidth="155.20001220703125" style="-fx-alignment: CENTER;" text="Number" />
+                <TableColumn fx:id="salaryColumn" prefWidth="152.79998779296875" style="-fx-alignment: CENTER;" text="Salary" />
+            </columns>
+        </TableView>
+      <ImageView blendMode="DARKEN" fitHeight="61.0" fitWidth="92.0" layoutX="500.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@search-loading.gif" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

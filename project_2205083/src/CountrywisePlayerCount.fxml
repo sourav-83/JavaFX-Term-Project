@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="800.0" maxWidth="1200.0" minHeight="800.0" minWidth="1200.0" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CountrywisePlayerCountController">
+    <children>
+      <ImageView blendMode="DARKEN" fitHeight="800.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Screenshot%202024-12-15%20212058.png" />
+         </image>
+      </ImageView>
+
+        <!-- Table -->
+        <TableView fx:id="countryPlayerTable" layoutX="150.0" layoutY="55.0" opacity="0.75" prefHeight="694.0" prefWidth="900.0" style="-fx-border-color: #ccc; -fx-border-radius: 10px;">
+            <columns>
+                <TableColumn fx:id="countryColumn" prefWidth="450.0" style="-fx-alignment: CENTER; -fx-font-size: 16px;" text="Country" />
+                <TableColumn fx:id="playerCountColumn" prefWidth="450.0" style="-fx-alignment: CENTER; -fx-font-size: 16px;" text="Player Count" />
+            </columns>
+        </TableView>
+      <Text fontSmoothingType="LCD" layoutX="450.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country-wise Player Count">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
