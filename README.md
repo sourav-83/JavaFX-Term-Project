@@ -45,4 +45,7 @@ This is a JavaFX-based client-server application designed for a simulated **Cric
    ```bash
    javac Server.java
    java Server
-3. Run App.java
+3. Run the client program:
+  ```bash
+   javac App.java
+   java App
