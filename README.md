@@ -42,10 +42,18 @@ This is a JavaFX-based client-server application designed for a simulated **Cric
 ### Server:
 1. Navigate to the `server` directory.
 2. Run the server:
+
    ```bash
-   javac Server.java
-   java Server
-3. Run the client program:
-  ```bash
-   javac App.java
-   java App
+     javac Server.java
+     java Server
+   ```
+3. Run the client program:<br>
+
+   ```bash
+    javac App.java
+    java App
+   ```
+<br>This is how it looks:<br>
+
+![App UI](javafx.jpg)
+
